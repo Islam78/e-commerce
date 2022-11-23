@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Qurba-task'`, () => {
+  it(`should have as title 'task'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Qurba-task');
+    expect(app.title).toEqual('task');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('Qurba-task app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('task app is running!');
   });
 });
